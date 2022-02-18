@@ -8,6 +8,5 @@ services:
         environment:
             RTSP_PROTOCOLS: tcp
         ports:
-            -   8554:8554
-            -   1935:1935
-        network_mode: host
+            - '8554:8554'
+            - '1935:1935'
