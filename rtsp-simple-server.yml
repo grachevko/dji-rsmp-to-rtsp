@@ -141,7 +141,7 @@ hlsAllowOrigin: '*'
 # another entry.
 paths:
     live/input:
-        runOnReady: ffmpeg -i rtmp://localhost:1935/live/input -c copy -f rtsp rtsp://localhost:8554/live/output
+        runOnReady: ffmpeg -i rtmp://localhost:1935/live/input -c copy -an -f rtsp rtsp://localhost:8554/live/output
         runOnReadyRestart: yes
     live/output:
         readUser: sha256:BPiZbadjt6lpsQKO4wB1aerzpjVIbdqyEdUSyFud+Ps=
