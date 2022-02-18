@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    rtsp-simple-server:
+        restart: always
+        build:
+            context: .
+        environment:
+            RTSP_PROTOCOLS: tcp
+        ports:
+            -   8554:8554
+            -   1935:1935
+        network_mode: host
